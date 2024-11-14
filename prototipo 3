@@ -41,6 +41,7 @@ void salvarProdutos() {
     printf("Produtos salvos com sucesso!\n");
 }
 
+
 void carregarProdutos() {
     FILE *arquivo = fopen("produtos.txt", "rb");
     if (arquivo != NULL) {
@@ -52,56 +53,57 @@ void carregarProdutos() {
 }
 
 
+
 void ProdutosCadastrados(){
-    strcpy(produtos[0].nome, "banana prata");
-    produtos[0].preco_kg_ou_unidade = 3.50;
-    produtos[0].tipo_venda = 1; // Vendido por peso
-    produtos[0].estoque = 120;  // Estoque inicial
+    strcpy(produtos[0].nome, "banana");
+    produtos[0].preco_kg_ou_unidade = 1.10;
+    produtos[0].tipo_venda = 0; // Vendido por unidade
+    produtos[0].estoque = 85;  // Estoque inicial
 
-    strcpy(produtos[1].nome, "maca gala");
-    produtos[1].preco_kg_ou_unidade = 7.00;
-    produtos[1].tipo_venda = 1; 
-    produtos[1].estoque = 80;   
+    strcpy(produtos[1].nome, "maca");
+    produtos[1].preco_kg_ou_unidade = 9.00;
+    produtos[1].tipo_venda = 1; // Vendido por peso
+    produtos[1].estoque = 95;   // Estoque inicial
 
-    strcpy(produtos[2].nome, "batata inglesa");
-    produtos[2].preco_kg_ou_unidade = 4.20;
+    strcpy(produtos[2].nome, "batata");
+    produtos[2].preco_kg_ou_unidade = 8.70;
     produtos[2].tipo_venda = 1; 
-    produtos[2].estoque = 150;   
+    produtos[2].estoque = 187;   
 
     strcpy(produtos[3].nome, "cenoura");
-    produtos[3].preco_kg_ou_unidade = 3.80;
+    produtos[3].preco_kg_ou_unidade = 4.20;
     produtos[3].tipo_venda = 1; 
-    produtos[3].estoque = 100;   
+    produtos[3].estoque = 132;   
 
-    strcpy(produtos[4].nome, "tomate italiano");
-    produtos[4].preco_kg_ou_unidade = 6.50;
+    strcpy(produtos[4].nome, "tomate");
+    produtos[4].preco_kg_ou_unidade = 9.50;
     produtos[4].tipo_venda = 1; 
-    produtos[4].estoque = 100;  
+    produtos[4].estoque = 55;  
 
-    strcpy(produtos[5].nome, "alface crespa");
-    produtos[5].preco_kg_ou_unidade = 2.50;
-    produtos[5].tipo_venda = 0; // Vendido por unidade
-    produtos[5].estoque = 75;  // Estoque inicial
+    strcpy(produtos[5].nome, "alface");
+    produtos[5].preco_kg_ou_unidade = 4.50;
+    produtos[5].tipo_venda = 0; 
+    produtos[5].estoque = 65;  
 
-    strcpy(produtos[6].nome, "couve manteiga");
-    produtos[6].preco_kg_ou_unidade = 1.20;
+    strcpy(produtos[6].nome, "couve");
+    produtos[6].preco_kg_ou_unidade = 5.80;
     produtos[6].tipo_venda = 0; 
-    produtos[6].estoque = 50;  
+    produtos[6].estoque = 35;  
 
-    strcpy(produtos[7].nome, "abacaxi perola");
-    produtos[7].preco_kg_ou_unidade = 6.00;
+    strcpy(produtos[7].nome, "abacaxi");
+    produtos[7].preco_kg_ou_unidade = 9.00;
     produtos[7].tipo_venda = 0; 
-    produtos[7].estoque = 40;  
+    produtos[7].estoque = 55;  
 
-    strcpy(produtos[8].nome, "abobrinha italiana");
-    produtos[8].preco_kg_ou_unidade = 5.00;
+    strcpy(produtos[8].nome, "abobrinha");
+    produtos[8].preco_kg_ou_unidade = 6.30;
     produtos[8].tipo_venda = 1; 
-    produtos[8].estoque = 50;  
+    produtos[8].estoque = 72;  
 
-    strcpy(produtos[9].nome, "limao taiti");
-    produtos[9].preco_kg_ou_unidade = 3.00;
+    strcpy(produtos[9].nome, "limao");
+    produtos[9].preco_kg_ou_unidade = 5.70;
     produtos[9].tipo_venda = 1; 
-    produtos[9].estoque = 90;   
+    produtos[9].estoque = 110;   
 }
 
 
@@ -329,3 +331,4 @@ switch(opcao_login){
     }
 
     return 0;
+}
